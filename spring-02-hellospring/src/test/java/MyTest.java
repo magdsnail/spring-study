@@ -18,6 +18,5 @@ public class MyTest {
 
         Hello hello = (Hello)context.getBean("hello");
         System.out.println(hello.toString());
-
     }
 }
