@@ -14,7 +14,7 @@
 <!--    方式三-->
     <bean id="annotationPointCut" class="com.kuang.diy.AnnotainPointCut"></bean>
 
-<!--    开启注解支持 JDK(默认)proxy-target-class="false"  cglib proxy-target-class="true"-->
+<!--    开启注解支持-->
     <aop:aspectj-autoproxy/>
 
     <!--    方式一 使用原生spring api接口-->
