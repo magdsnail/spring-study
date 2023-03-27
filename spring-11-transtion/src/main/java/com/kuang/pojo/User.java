@@ -1,6 +1,8 @@
 package com.kuang.pojo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * ClassName: User
@@ -12,6 +14,8 @@ import lombok.Data;
  */
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
     private int id;
     private String name;

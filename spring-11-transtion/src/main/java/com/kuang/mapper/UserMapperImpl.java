@@ -16,6 +16,23 @@ import java.util.List;
 public class UserMapperImpl extends SqlSessionDaoSupport implements UserMapper {
 
     public List<User> selectUser() {
-        return getSqlSession().getMapper(UserMapper.class).selectUser();
+
+        User user = new User(7, "xiaoyangzi", "123456");
+
+        UserMapper mapper = getSqlSession().getMapper(UserMapper.class);
+        mapper.addUser(user);
+        mapper.deleteUser(7);
+
+        return mapper.selectUser();
+    }
+
+    public int addUser(User user) {
+
+
+        return getSqlSession().getMapper(UserMapper.class).addUser(user);
+    }
+
+    public int deleteUser(int id) {
+        return getSqlSession().getMapper(UserMapper.class).deleteUser(id);
     }
 }
