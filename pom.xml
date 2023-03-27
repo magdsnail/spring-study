@@ -19,6 +19,7 @@
         <module>spring-08-proxy</module>
         <module>spring-09-aop</module>
         <module>spring-10-mybatis</module>
+        <module>spring-11-transtion</module>
     </modules>
 
     <properties>
@@ -44,5 +45,25 @@
             <version>1.9.7</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
 
 </project>

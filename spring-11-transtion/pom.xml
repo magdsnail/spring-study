@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-10-mybatis</artifactId>
+    <artifactId>spring-11-transtion</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
